@@ -9,13 +9,18 @@
     src: url(https://hackedfont.com/HACKED.ttf);
 }
 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/css/img/marcus_welcome.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.7)),url(/css/img/marcus_welcome.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -76,17 +81,20 @@ header {
 
 
 
+
+/* -------------HOME------------- */
+
 .intro-text-box {
     position: absolute;
     max-width: 1140px;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-15%, -15%);
+    transform: translate(-20%, -15%);
     /* border: 1px solid black; */
     
 }
 
-/* -------------HOME------------- */
+
 /* HEADING  */
 
 h1 {
@@ -99,7 +107,7 @@ h1 {
 
 p {
     color: greenyellow;
-    font-size: 20px;
+    font-size: 21px;
     display: inline-block;
     margin-left: 20px;
     margin-right: 30%;
@@ -128,4 +136,86 @@ p {
 .btn-anim:hover,
 .btn-anim:active {
     background-color: #4D961E;
+}
+
+/* ---------------NEWS----------- */
+
+.section-news {
+    background-color: #8122BE;
+    height: 100vh;
+    position: relative;
+}
+
+.news-box {
+    position: absolute;
+    max-width: 1140px;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+}
+
+.news-box h1 {
+    letter-spacing: 2px;
+}
+.news-box h1::after {
+    display: block;
+    height: 3px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    /* margin: 0 auto; */
+    margin-top: 7px;
+    margin-bottom: 30px;
+    transform: translate(250%,250%);
+}
+
+.box-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    grid-column-gap: 0;
+    justify-content: space-evenly;
+}
+
+.box-container-item {
+    margin-top: 50%;
+    margin-left: 0;
+    margin-right: 5%;
+    margin-bottom: 0%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.box-container-item p {
+    margin: 0% auto;
+    padding: 0;
+    text-align: center;
+    color: rgb(181, 255, 10);
+    font-weight: 600;
+}
+
+.box-container-item img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    transform: scale(1.15);
+}
+
+.text-block {
+    position: absolute;
+    top: 300px;
+    right: 30px;
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+
+.box-container-item img:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
