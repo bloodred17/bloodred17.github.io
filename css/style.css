@@ -1,0 +1,131 @@
+*   {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(/css/img/marcus_welcome.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/* NAVIGATION */
+.nav-box-effect .nav-box{
+    position: relative;
+    border: 3px solid aquamarine;
+    font-size: 20px;
+    /* min-width: 600px; */
+    margin-right: 40%;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    padding: 20px 20px 5px 20px;
+}
+.nav-box:hover {
+    border: 3px solid blueviolet;
+}
+
+.main-nav {
+    /* height: 125px; */
+    text-align: justify;
+    
+}
+
+
+
+.main-nav li {
+    width: 150px;
+    display: inline-block;
+    height: auto;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main-nav li a {
+    color: beige;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 4px solid greenyellow;
+}
+
+.main-nav::after {
+    content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+
+
+.intro-text-box {
+    position: absolute;
+    max-width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -15%);
+    /* border: 1px solid black; */
+    
+}
+
+/* -------------HOME------------- */
+/* HEADING  */
+
+h1 {
+    font-family: Hacked;
+    font-size: 45px;
+    color: aliceblue;
+}
+
+/* PARA */
+
+p {
+    color: greenyellow;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 30%;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    color: white;
+    margin-top: 5px;
+    margin-left: 20px;
+    /* max-width: 100px; */
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+}
+
+.btn-anim {
+    background-color: #56A821;
+    
+}
+
+.btn-anim:hover,
+.btn-anim:active {
+    background-color: #4D961E;
+}
