@@ -28,7 +28,7 @@ header {
 }
 
 /* NAVIGATION */
-.nav-box-effect .nav-box{
+ .nav-box{
     position: relative;
     border: 3px solid aquamarine;
     font-size: 20px;
@@ -190,11 +190,12 @@ p {
 }
 
 .box-container-item p {
+    font-family: 'Tauri', sans-serif;
     margin: 0% auto;
     padding: 0;
     text-align: center;
     color: rgb(181, 255, 10);
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .box-container-item img {
@@ -202,6 +203,7 @@ p {
     height: auto;
     opacity: 0.9;
     transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .text-block {
@@ -219,3 +221,4 @@ p {
     opacity: 1;
     transform: scale(1.03);
 }
+
