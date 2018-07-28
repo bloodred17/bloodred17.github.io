@@ -1,4 +1,4 @@
-@media screen and (max-width: 380px){
+@media screen and (max-width: 500px) and (min-width: 370px){
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -130,7 +130,7 @@
 
 }
 
-@media screen and (max-width: 325px){
+@media screen and (max-width: 369px){
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -195,7 +195,7 @@
     .link-box a {       
         position: absolute;
         bottom: -45px;
-        left: -35px;
+        left: 20px;
         text-align: center;
     }
     
