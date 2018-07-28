@@ -215,7 +215,7 @@
         grid-auto-flow: row;
     }
     .news-box h1 {
-        margin: -30% 20% 0% 20%;
+        margin: -27% 20% 0% 20%;
         font-size: 27px;
     }
     .news-box h1::after {
