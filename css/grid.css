@@ -107,25 +107,24 @@
         overflow: hidden;
         width: 100%;
     }
-    .text-block {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        background-color: rgba(0, 0, 0);
-        color: white;
-        padding: 5px;
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    .text-block p {
+    .box-container-item p {
         font-family: 'Tauri', sans-serif;
-        margin: 0% auto;
+        margin: 0% 6rem;
         padding: 0;
         text-align: center;
         color: rgb(181, 255, 10);
         font-weight: 100;
-        font-size: 14px;
+    
+    }
+
+    .box-container-item li a :hover,
+    .box-container-item li a :active{
+        transition: border-bottom 0.2s;
+        border-bottom: 4px solid aquamarine;
+    }
+
+    .assignments li{
+        margin-top: 1rem;
     }
 
 }
@@ -242,27 +241,25 @@
         overflow: hidden;
         width: 100%;
     }
-    .text-block {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        background-color: rgba(0, 0, 0);
-        color: white;
-        padding: 5px;
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-    }
-    .text-block p {
+    .box-container-item p {
         font-family: 'Tauri', sans-serif;
-        margin: 0% auto;
+        margin: 0% 6rem;
         padding: 0;
         text-align: center;
         color: rgb(181, 255, 10);
         font-weight: 100;
-        font-size: 14px;
+    
     }
 
+    .box-container-item li a :hover,
+    .box-container-item li a :active{
+        transition: border-bottom 0.2s;
+        border-bottom: 4px solid aquamarine;
+    }
+
+    .assignments li{
+        margin-top: 1rem;
+    }
 
 }
 
@@ -370,27 +367,25 @@
     .box-container-item {
         display: grid;
     }
-
-    .text-block {
-        position: absolute;
-        top: 125px;
-        right: 0px;
-        background-color: black;
-        color: white;
-        padding: 4px;
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-        height: 50px;
-    }
-    .text-block p {
+    
+    .box-container-item p {
         font-family: 'Tauri', sans-serif;
-        margin: 0% auto;
+        margin: 0% 6rem;
         padding: 0;
         text-align: center;
         color: rgb(181, 255, 10);
         font-weight: 100;
-        font-size: 10px;
+    
+    }
+
+    .box-container-item li a :hover,
+    .box-container-item li a :active{
+        transition: border-bottom 0.2s;
+        border-bottom: 4px solid aquamarine;
+    }
+
+    .assignments li{
+        margin-top: 1rem;
     }
 
 }
