@@ -191,7 +191,7 @@
     .intro-text-box p {
         font-size: 15px;
         font-weight: 50;
-        margin: -5% 2% 0% auto;
+        margin: 5% 2% 1% auto;
     }
     .link-box {
         margin: 1rem;
@@ -327,6 +327,7 @@
         margin: 7% 10% 0% auto;
     }
     .link-box {
+        margin: 1rem;
     }
     .link-box a {       
         position: absolute;
