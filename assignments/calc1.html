@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculater: 1</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+        document.write("<h1>Calculator 1:</h1><br>>> ");
+
+        var num1 = prompt("Enter value of Number 1:");
+        var operator = prompt("Enter operator:");
+        var num2 = prompt("Enter value of Number 2:");
+        if(num1 === null || num1 === "" || isNaN(num1) ||
+            num2 === null || num2 === "" || isNaN(num2)){
+            
+            document.write("Enter a valid number.");
+            alert("Invalid number");
+        }else if(isNaN(operator)){
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+
+            var result;
+            switch(operator){
+                case "+" : result = num1 + num2; break;
+                case "-" : result = num1 + num2; break;
+                case "*" : result = num1 * num2; break;
+                case "/" : if(num1 !== 0 && num2 !== 0){
+                    result = num1 / num2;        
+                }else{
+                    document.write("Numerator or Denominator cannot be 0<br>>> ");
+                }
+                break;
+                default: document.write("Enter a valid operator.");
+            }
+            document.write(num1+" "+operator+" "+num2+" = "+result);
+        }
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/calc.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>

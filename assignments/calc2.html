@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator: 2</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+        document.write("<h1>Calculator 2:</h1>");
+
+//Validates Numbers
+const numberValidator = (check) => {
+    return (check === null || check === undefined || check === "" || isNaN(check))? true : false;
+};
+//Validates Operators
+const operatorValidator = (check) => {
+    return (check === null || check === undefined || check === "" || !isNaN(check))? true : false;
+};
+
+var num1 = prompt("Enter value of Number 1:");
+var operator = (numberValidator(num1))? null : prompt("Enter Operator:");
+var num2 = (operatorValidator(operator))? null : prompt("Enter value of Number 2:");
+
+if(numberValidator(num1) || numberValidator(num2)){
+    document.write("<br>>> Enter valid data.");
+    alert("Invalid data");
+}else if(isNaN(operator)){
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+
+    var result;
+    switch(operator){
+        case "+" : result = num1 + num2; break;
+        case "-" : result = num1 + num2; break;
+        case "*" : result = num1 * num2; break;
+        case "/" : if(num1 !== 0 && num2 !== 0){
+            result = num1 / num2;        
+        }else{
+            document.write("<br>>> Numerator or Denominator cannot be 0");
+        }
+        break;
+        default: document.write("<br>>> Enter a valid operator.");
+    }
+    document.write("<br>>> "+num1+" "+operator+" "+num2+" = "+result);
+}
+
+document.write("<div class=\"footer\"><h2>Press F5 to restart</h2></div>");
+
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/calc2.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>

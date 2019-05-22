@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Rhombus</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+        document.write("<h1>To Print * Rhombus pattern :</h1><br>>> ");
+
+        var num = +prompt("Input a number :");
+        num = (num%2 !== 0)? num : num+1;
+        var upper = num, lower = num;
+        for(var i = 0; i < num; i++){
+            for(var j = 1; j <= 2*num-1; j++){
+                if(j>=lower && j <= upper){
+                    document.write("*");
+                }else{
+                    document.write("&nbsp");
+                }
+            }
+            if(i < (num/2)-1){
+                lower = lower -1;
+                upper = upper +1;
+            }else{
+                lower = lower +1;
+                upper = upper -1;
+            }
+            document.write("<br>");
+        }
+
+        document.write("<div class=\"footer\"><h2>Press F5 to restart</h2></div>");
+
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/rhombus.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>

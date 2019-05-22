@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>N^1..N^N series</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+        document.write("<h1>To calculate the power of a Number till N :</h1><br>>> ");
+
+        var num = +prompt("Enter number value:");
+        var pow = +prompt("Enter power value:");
+        var product = 1;
+        for(var i=1; i<=pow; i++){
+            for(var j = 1; j<= i; j++){
+                product = product * num;
+            }
+            document.write(num+"^"+i+ " = "+ product + "<br>");
+            product = 1;
+        }
+
+        document.write("<div class=\"footer\"><h2>Press F5 to restart</h2></div>");
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/nPow.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>

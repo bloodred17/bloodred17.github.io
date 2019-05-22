@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplication without using *</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+        document.write("<h1>To Multiply without using ( * ) operator :</h1><br>>> ");
+
+        var num1 = +prompt("Enter number 1:");
+        var num2 = +prompt("Enter number 2:");
+        var mul = 0;
+        var negative = false;
+
+        if(num1 < 0){
+            num1 = num1 * (-1);
+            negative = true;
+        }
+
+        for(var i=num1; i > 0; i--){
+            mul = mul + num2;
+        }
+
+        if(negative){
+            mul = mul * (-1);
+            num1 = num1 * (-1);
+        }
+
+        document.write(num1+ " * "+ num2+ " = "+mul);
+
+        document.write("<div class=\"footer\"><h2>Press F5 to restart</h2></div>");
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/notMul.js"><button class="btn btn-anim">View Source Code</button></a>
+    <a href="./js/notMul2.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>
