@@ -57,6 +57,7 @@
         margin: -5% auto 0% auto;
     }
     .link-box {
+        margin: 1rem;
     }
     .link-box a {       
         position: absolute;
@@ -80,11 +81,12 @@
         grid-auto-flow: row;
     }
     .news-box h1 {
-        margin: -30% 20% 0% 20%;
-        font-size: 35px;
+        margin: -10% 20% 0% 20%;
+        text-align: center;
+        font-size: 30px;
     }
     .news-box h1::after {
-        margin-top: 15px;
+        margin-top: 25px;
         margin-bottom: 10px;
         transform: translate(65%,55%);
     }
