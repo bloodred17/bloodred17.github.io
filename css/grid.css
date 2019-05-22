@@ -197,7 +197,7 @@
     }
     .link-box a {       
         position: absolute;
-        bottom: -45px;
+        bottom: 0px;
         left: 20px;
         text-align: center;
     }
