@@ -12,6 +12,8 @@
         var num = +prompt("Input a number :");
         num = (num%2 !== 0)? num : num+1;
         var upper = num, lower = num;
+        document.write("<br>");
+
         for(var i = 0; i < num; i++){
             for(var j = 1; j <= 2*num-1; j++){
                 if(j>=lower && j <= upper){
