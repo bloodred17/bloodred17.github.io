@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cube and Sum of two numbers</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+        document.write("<h1>To Calculate cube and sum of two numbers:</h1><br>>>");
+
+        function cubeSum (a, b){
+            return (a*a*a)+(b*b*b);
+        }
+
+        var num1 = +prompt("Enter Number 1:");
+        var num2 = +prompt("Enter Number 2:");
+
+        document.write("Result: "+ cubeSum(num1, num2));
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/cubeSumFunc.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>

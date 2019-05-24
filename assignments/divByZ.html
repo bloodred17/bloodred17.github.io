@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Numbers divisible by Z</title>
+    <link rel="stylesheet" type="text/css" href="../css/console.css">
+    <script>
+
+        document.write("<h1>To display numbers that are divisible by Z between 1-100:</h1><br>>>");
+        function divByZ(num){
+            for(var i=2; i< 100; i++){
+                if(i % num == 0){
+                    document.write("<br>"+i+" is divisible by "+num);
+                }
+            }
+        }
+
+        var num = +prompt("Enter a number: ");
+        divByZ(num); 
+        document.write("<br>");
+    </script>
+    
+
+</head>
+<body>
+    <a href="./js/divByZ.js"><button class="btn btn-anim">View Source Code</button></a>
+</body>
+</html>

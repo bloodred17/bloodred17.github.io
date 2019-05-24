@@ -197,7 +197,7 @@
         margin: 1rem;
     }
     .link-box a {       
-        position: absolute;
+        position: relative;
         bottom: 10px;
         left: 20px;
         text-align: center;
@@ -330,7 +330,7 @@
         margin: 1rem;
     }
     .link-box a {       
-        position: absolute;
+        position: relative;
         bottom: -10%;
         left: 35%;
         text-align: center;
