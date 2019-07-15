@@ -175,7 +175,7 @@ p {
 .box-container {
     display: grid;
     position: relative;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
     grid-column-gap: 0;
     justify-content: space-evenly;
@@ -183,14 +183,15 @@ p {
 
 .box-container-item {
     /* border: 1px solid black; */
-    margin-top: 50%;
-    margin-left: 0;
+    margin-top: 30%;
+    margin-left: 0%;
     margin-right: 5%;
     margin-bottom: 0%;
     position: relative;
     display: block;
     overflow: hidden;
     width: 100%;
+    text-align: center;
 }
 
 .box-container-item p {
@@ -212,3 +213,19 @@ p {
 .assignments li{
     margin-top: 1rem;
 }
+
+.border-anim {
+    /* border: 4px dotted red; */
+    /* transition: all 1s; */
+    height: 50%;
+}
+
+.button-icon {
+    height: 80%;
+}
+
+.border-anim :hover{
+    height: 90%;
+}
+
+

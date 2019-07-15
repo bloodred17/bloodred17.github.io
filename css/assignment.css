@@ -1,0 +1,127 @@
+*   {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Hacked;
+    src: url(https://hackedfont.com/HACKED.ttf);
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.8)),url(../css/img/assignment.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+header {
+}
+
+/* NAVIGATION */
+.nav-box{
+    position: relative;
+    border: 3px solid aquamarine;
+    font-size: 20px;
+    /* min-width: 600px; */
+    margin-right: 40%;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    padding: 20px 20px 5px 20px;
+}
+.nav-box:hover {
+    border: 3px solid azure;
+}
+
+.main-nav {
+    /* height: 125px; */
+    text-align: justify;
+    
+}
+
+
+
+.main-nav li {
+    width: 150px;
+    display: inline-block;
+    height: auto;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main-nav li a {
+    color: #d2f25c;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 4px solid whitesmoke;
+}
+
+.main-nav::after {
+    content: '';
+width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+display: inline-block;
+}
+
+
+
+
+/* -------------HOME------------- */
+
+.intro-text-box {
+    position: absolute;
+    max-width: 1140px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-20%, -15%);
+    /* border: 1px solid black; */
+    
+}
+
+.box-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    grid-column-gap: 0;
+    justify-content: space-evenly;
+}
+
+.text-block {
+    margin: 10%;
+}
+
+.assignments li a {
+    text-decoration: none;
+}
+
+.assignments li a p {
+    color: white;
+
+}
+
+.assignments li :hover{
+    color: #d2f25c;
+    font-size: 1.2rem;
+}
+
+.assignments li a :hover{
+    border-bottom: 3px solid aquamarine;
+    
+}
